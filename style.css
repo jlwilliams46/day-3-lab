@@ -1,0 +1,79 @@
+
+/* app style */
+header {
+  background: #999;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #FF6347;
+}
+
+li.goals {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #228B22;
+}
+
+li.education {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #228B22;
+}
+
+li.experience {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #0000A0;
+}
+li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+h2, p {
+  font-family: helvetica;
+}
+
+img {
+  height:300px;
+  length: 300px;
+}
+
+header {
+  background: linear-gradient(#444, #ffffff);
+}
+
+body {
+  background: #ffffff;
+}
+
+main {
+  margin-left: 20px;
+}
+
+ol {
+  margin: auto;
+  width: 60%;
+}
+
+div {
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
