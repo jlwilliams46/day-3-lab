@@ -1,6 +1,6 @@
 'use strict';
 //asking who they are
-var correctTotalAnsers = 0;
+var correctTotalAnswers = 0;
 
 var user = prompt('Hello Curious person!!!! what is your name?');
 console.log('user name:', user);
@@ -14,7 +14,7 @@ console.log('Heath nub of kids:', kids);
 
 if (kids === '0' || kids === '1') {
   alert('you right.');
-  correctTotalAnsers++;
+  correctTotalAnswers++; //pair programming changes
 } else {
   alert('nope, he only has 0! unless you count his wife..J/K');
 }
@@ -25,7 +25,7 @@ console.log('heath has this many hats;', hats);
 
 if (hats === '5' || hats === '6') {
   alert('you right again,');
-  correctTotalAnsers++;
+  correctTotalAnswers++; //pair programming changes
 } else {
   alert('nope, he only has 5 or was is 6?');
 }
@@ -34,9 +34,10 @@ if (hats === '5' || hats === '6') {
 var city = prompt('What city does Heath live in?');
 console.log('heath lives where:', city);
 
-if (city.toUpperCase() === 'seattle' || city.toUpperCase() === 'SEATTLE') {
+city = city.toUperCase();//pair programming changes
+if (city === 'SEATTLE') {
   alert('Great! you know that he loves the Seattle!');
-  correctTotalAnsers++;
+  correctTotalAnswers++; //pair programming changes
 } else {
   alert('nope, he does not live there!');
 }
@@ -45,9 +46,10 @@ if (city.toUpperCase() === 'seattle' || city.toUpperCase() === 'SEATTLE') {
 var favFood = prompt('Ok ' + user + ' lets ask a hard one, what is Heath\'s favorite foods?');
 console.log('heaths favorite food:', favFood);
 
-if (favFood.toUpperCase() === 'pizza' || favFood.toUpperCase() === 'PIZZA') {
+food = food.toUpperCase();// pair programming changes
+if (favFood === 'PIZZA') {
   alert('YEP! He loves his Pizza!');
-  correctTotalAnsers++;
+  correctTotalAnswers++; //pair progrmamming changes
 } else {
   alert('nope, he likes ' + favFood + ' but its not his favorite');
 }
@@ -59,7 +61,7 @@ console.log('Does Heath have Glasses:', glasses);
 glasses = glasses.toLowerCase();
 if (glasses === 'yes' || glasses === 'y') {
   alert('great! you really do know Heath');
-  correctTotalAnsers++;
+  correctTotalAnswers++; //pair programming chnages
 } else {
   alert('NOPE! you need to think harder!!!!');
 }
@@ -74,7 +76,7 @@ while (number !== 11) {
 
   if (number === 11) {
     alert('Yep, that is right');
-    correctTotalAnsers++;
+    correctTotalAnswers++;
     break;
   } else if (counter >= maxGuesses) {
     break;
@@ -108,7 +110,7 @@ while(counter < 6 && correctAnswer === false) { // while loop starts here
     if (answer.toLowerCase() === lived[i]) {
       alert('nice job, you got it right!');
       correctAnswer = true;
-      correctTotalAnsers++;
+      correctTotalAnswers++;
       break;
     }
   } // for loop ends here
@@ -120,4 +122,4 @@ while(counter < 6 && correctAnswer === false) { // while loop starts here
 
 console.log('counter:', counter);
 
-alert('Congrats! ' + user + ' you got ' + correctTotalAnsers + ' out of 7!');
+alert('Congrats! ' + user + ' you got ' + correctTotalAnswers + ' out of 7!');
